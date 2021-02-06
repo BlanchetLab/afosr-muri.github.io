@@ -564,6 +564,12 @@ footer {
   color: #374054;
   margin: 0 0 15px 0;
 }
+.project-info h4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #374054;
+  margin: 0 0 5px 0;
+}
 .project-info p {
   color: #74808a;
   margin: 0 0 15px 0;
