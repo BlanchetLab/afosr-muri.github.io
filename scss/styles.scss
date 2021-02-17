@@ -473,12 +473,16 @@ footer {
     h2 {
         color: $heading;
     }
+
+    h2.headertekst {
+        text-align: center;
+    }
 }
 
 #experience-timeline {
     margin: 30px auto 0 auto;
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
 
     &:before {
         position: absolute;
@@ -521,6 +525,15 @@ footer {
         margin: 0;
     }
 
+    h3.headertekst {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+    }
+
     h4 {
         font-size: 1.2em;
         font-weight: 300;
@@ -533,7 +546,23 @@ footer {
         font-size: 0.9em;
         margin: 0;
     }
+
+    a.button {
+        background: #fff;
+        border-radius: 4px;
+        padding: 5px 10px;
+        border: none;
+        color: $base-color;
+        font-weight: 700;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        @include transition();
+    
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    }
 }
+
 
 .vtimeline-point {
     position: relative;

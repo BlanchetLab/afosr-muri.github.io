@@ -386,11 +386,14 @@ footer {
 #experience h2 {
   color: #374054;
 }
+#experience h2.headertekst {
+  text-align: center;
+}
 
 #experience-timeline {
   margin: 30px auto 0 auto;
   position: relative;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 #experience-timeline:before {
   position: absolute;
@@ -430,6 +433,14 @@ footer {
   display: inline-block;
   margin: 0;
 }
+.vtimeline-content h3.headertekst {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #374054;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
 .vtimeline-content h4 {
   font-size: 1.2em;
   font-weight: 300;
@@ -440,6 +451,19 @@ footer {
   color: #74808a;
   font-size: 0.9em;
   margin: 0;
+}
+.vtimeline-content a.button {
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #C41E3A;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.5s ease all;
+}
+.vtimeline-content a.button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .vtimeline-point {
