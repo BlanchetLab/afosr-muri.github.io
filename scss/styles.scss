@@ -751,7 +751,7 @@ footer {
 */
 
 #videos {
-    padding: 50px 15px 20px 15px;
+    padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
 
@@ -761,10 +761,10 @@ footer {
     }
 }
 
-.video {
+video {
     position: relative;
     max-width: 1100px;
-    margin: 0 auto 30px auto;
+    margin: 15px auto 15px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
@@ -772,6 +772,63 @@ footer {
 
 .videos-video {
     float: center;
+}
+
+.videos-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 400px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+        color: $heading;
+        margin: 0 0 5px 0;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: $heading;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+
+    a.button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 50%;
+        background: #fff;
+        border-radius: 4px;
+        padding: 5px 10px;
+        border: none;
+        color: $base-color;
+        font-weight: 700;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        @include transition();
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    }
+}
+
+.no-video {
+    .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        transform: none;
+    }
 }
 
 /*
